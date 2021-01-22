@@ -1,0 +1,99 @@
+$tablet-breakpoint: 992px;
+$mobile-breakpoint: 420px;
+
+.body-lienhe{
+    padding: 7rem 0 3rem 0;
+    max-Width: 100%;
+    .link{
+        width: 70%;
+        margin: 0 auto;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px dashed #e6e6e6;
+        justify-content: space-between;
+        @media (max-width: $tablet-breakpoint){    
+            width: 90%;
+        }
+        @media (max-width: $mobile-breakpoint){    
+            width: 90%;
+            font-size: 12px;
+        }
+        .NavLink{
+            color: #737373;
+            font-family: "Open Sans", sans-serif;
+            font-size: 12px;
+            width: 100%;
+            padding-right: 5px;
+        }
+        .NavLink:first-child::after{
+            content:">";
+            font-weight: bold;
+            padding-left: 5px;
+        }
+        .NavLink:last-child{
+            color: #789629;
+        }
+    }
+    .body-lienhe-container{
+        display:flex;
+        width: 70%;
+        margin:0 auto;
+        padding-top:30px;
+        @media (max-width: $tablet-breakpoint){    
+            width: 90%;
+        }
+        @media (max-width: $mobile-breakpoint){    
+            display: flex;
+            flex-direction: column;
+        }
+        .map{
+            width: 50%;
+            @media (max-width: $mobile-breakpoint){    
+                width: 24rem;
+            }
+            p{
+                font-size: 28px;
+                margin-bottom: 2rem;
+            }
+        }
+        .form-lienhe{
+            padding: 65px 0 0 30px;
+            width: 50%;
+            @media (max-width: $mobile-breakpoint){    
+                width: 18rem;
+                padding-left:0;
+            }
+            p{
+                font-size:20px;
+                margin-bottom: 2rem;
+            }
+            .form-lienhe-submit{
+                @media (max-width: $mobile-breakpoint){    
+                }    
+            }
+        }
+    }
+}
+label{                          
+    float:left;
+    font-weight: bold;
+}
+.ant-col {
+    @media (max-width: $mobile-breakpoint){   
+        max-width: 100rem !important; 
+    } 
+}
+.ant-col-8 {
+    @media (max-width: $mobile-breakpoint){   
+        max-width: 10rem !important; 
+    } 
+}
+.ant-form-item-label{
+    @media (max-width: $mobile-breakpoint){   
+        max-width: 80px !important; 
+    } 
+}
+Button{
+    @media (max-width: $mobile-breakpoint){   
+        margin-right:6rem;
+    } 
+}

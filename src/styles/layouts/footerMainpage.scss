@@ -1,0 +1,155 @@
+$tablet-breakpoint: 992px;
+$mobile-breakpoint: 420px;
+
+
+.row-container{
+    @media (max-width: $mobile-breakpoint){    
+        display: flex;
+        flex-direction: column;
+    }
+    .col2{
+        @media (max-width: $mobile-breakpoint){    
+            margin-top:40px;
+        }
+    }
+}
+
+.footer{
+    width:100%;
+    padding-top: 42px;
+    background-color: #050505;
+    height:20rem;
+    @media (max-width: $mobile-breakpoint){    
+        width: 100%;
+        height:100%;
+        margin-top:60rem;
+    }
+    .container{
+        width: 80%;
+        color:white;
+        justify-content: space-between;
+        margin: 0 auto;
+        @media (max-width: $tablet-breakpoint){    
+            width:90%; 
+        }
+        @media (max-width: $mobile-breakpoint){    
+            width: 90%;
+        }
+        .title{
+            color: #d1d1d1;
+            font-family: "Open Sans", sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            white-space: nowrap;
+            @media (max-width: $mobile-breakpoint){    
+                
+            }
+        }
+        .vitri{
+            font-weight: bold;
+            line-height: 1.8;
+            margin-top: 20px;
+            color: #494949;
+            font-family: "Roboto", sans-serif;
+            @media (max-width: $tablet-breakpoint){    
+                width:95%; 
+                font-size: 13.5px;
+            }
+            @media (max-width: $mobile-breakpoint){    
+                width: 23rem;
+                font-size: 12px;
+            }
+            .vitri-title{
+                display:flex;
+                @media (max-width: $mobile-breakpoint){    
+                    font-size:13px;
+                }
+                img{
+                    width: 4%;
+                    height:4%;
+                    margin-right:5px;
+                    margin-top:3px;
+                }
+                p{
+                    font-size:13px;
+                }
+            }
+            .ul-lienhe{
+                padding-top:10px;
+                display: flex;
+                width: 80%;
+                @media (max-width: $tablet-breakpoint){    
+                    width:90%; 
+                    font-size: 12px;
+                }
+                @media (max-width: $mobile-breakpoint){    
+                    font-size:13px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin:0 auto;
+                    li{
+                        a{
+                            color: #494949;
+                        }
+                    }
+                }
+            }
+        }
+        .list{
+            font-size:14px;
+            margin-top: 23px;
+            margin-bottom: 25px;
+            line-height: 30px;
+            color:#494949;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 600;
+            white-space: nowrap;
+            @media (max-width: $tablet-breakpoint){    
+                width:85%; 
+                font-size: 11.5px;
+            }
+            @media (max-width: $mobile-breakpoint){    
+                font-size:13px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+.footer-image{
+    display: flex;
+    color:white;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto auto;
+    padding-top:40px;
+    @media (max-width: $tablet-breakpoint){    
+        width:90%; 
+
+    }
+    @media (max-width: $mobile-breakpoint){    
+        flex-direction: column;
+        margin:0;
+        padding:0;
+    }
+    p{
+        font-weight: bold;
+        color:#494949;
+        font-size: 12px;
+        @media (max-width: $mobile-breakpoint){    
+            font-size:13px;
+        }
+    }
+    .imgFooter{
+        padding-right:20px;
+        float:right;
+        @media (max-width: $mobile-breakpoint){    
+            margin:20px 0 30px 0;
+            width: 70%;
+        }
+    }
+}
